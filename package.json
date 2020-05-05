@@ -1,0 +1,25 @@
+{
+  "name": "repair-desing",
+  "version": "1.0.0",
+  "description": "Сайт компании по ремонту квартир",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serhii-edit/repair-desing.git"
+  },
+  "author": "Serhii Yakymenko, Сергей Якименко",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/serhii-edit/repair-desing/issues"
+  },
+  "homepage": "https://github.com/serhii-edit/repair-desing#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.7"
+  }
+}
