@@ -1,11 +1,19 @@
-const gulp = require('gulp');
+// const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
 
 
-gulp.task('Hello', function(done) {
-  console.log('Hello, world!');
-  done();
+let gulp = require('gulp');
+let cleanCSS = require('gulp-clean-css');
+
+gulp.task('minify-css', () => {
+  return gulp.src('css/*.css')
+    .pipe(cleanCSS({debug: true}, (details) => {
+      console.log(`${details.name}: ${details.stats.originalSize}`);
+      console.log(`${details.name}: ${details.stats.minifiedSize}`);
+    }))
+  .pipe(gulp.dest('css/minify'));
 });
+
 
 // Static server
 gulp.task('browser-sync', function() {
@@ -16,3 +24,4 @@ gulp.task('browser-sync', function() {
   });
   gulp.watch("./*.html").on('change', browserSync.reload);
 });
+
