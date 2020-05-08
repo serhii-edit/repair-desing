@@ -1,11 +1,11 @@
+const {src, dest, watch} = require('gulp');
 const browserSync = require('browser-sync').create();
-const gulp = require('src, dest, watch');
 const sass = require('gulp-sass');
 
 
 // Static server
 function bs() {
-  serverSass();
+  serveSass();
   browserSync.init({
       server: {
           baseDir: "./"
