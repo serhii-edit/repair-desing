@@ -403,3 +403,6 @@ template {
 body {
   font-family: "Futura Book";
   font-size: 14px; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
