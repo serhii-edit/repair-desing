@@ -342,6 +342,13 @@ template {
   animation-direction: reverse; }
 
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99; }
+
+.header {
   background-color: #131313;
   padding-top: 24px;
   padding-bottom: 22px; }
@@ -369,6 +376,7 @@ template {
 
 .hero {
   position: relative;
+  padding-top: 100px;
   background: #131313 url("../img/hero-bg.jpg") no-repeat center/cover;
   height: 100vh;
   color: #FFFFFF; }
