@@ -326,9 +326,17 @@ template {
 
 .button_primary {
   background-color: #E3B873;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  margin-right: 20px; }
+
+.button_outline {
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 2px;
+  background-color: transparent; }
 
 .container {
+  width: 85%;
   max-width: 1256px;
   margin: auto; }
 
@@ -379,7 +387,14 @@ template {
   padding-top: 100px;
   background: #131313 url("../img/hero-bg.jpg") no-repeat center/cover;
   height: 100vh;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; }
+  .hero__content {
+    margin-left: 1px;
+    max-width: 550px; }
   .hero__instagram {
     display: flex;
     justify-content: center;
@@ -390,6 +405,24 @@ template {
     max-width: 91px;
     background-color: #131313;
     height: 100%; }
+  .hero__scroll-down {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    background-color: #131313;
+    min-width: 247px;
+    min-height: 97px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none; }
+  .hero__text {
+    font-size: 22px;
+    line-height: 30px;
+    max-width: 504px;
+    margin-bottom: 41px; }
 
 .instagram__link {
   text-transform: uppercase;
@@ -398,11 +431,17 @@ template {
   transform: rotate(90deg); }
 
 .title {
-  margin: 0; }
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 53px;
+  font-family: 'Yeseva One', cursive; }
+  .title_primary {
+    color: #E3B873; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
 
 body {
   font-family: "Futura Book";
   font-size: 14px; }
-
-*, *:before, *:after {
-  box-sizing: border-box; }
