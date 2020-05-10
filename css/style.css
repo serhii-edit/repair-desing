@@ -323,11 +323,17 @@ template {
   border: none;
   border-radius: 2px;
   text-transform: uppercase; }
+  .button:hover {
+    cursor: pointer; }
 
 .button_primary {
   background-color: #E3B873;
   color: #FFFFFF;
-  margin-right: 20px; }
+  margin-right: 20px;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+  transition: box-shadow 0.3s; }
+  .button_primary:hover {
+    box-shadow: none; }
 
 .button_outline {
   color: #FFFFFF;
@@ -374,7 +380,10 @@ template {
   color: #FFFFFF;
   text-decoration: none;
   text-transform: uppercase;
-  margin-right: 40px; }
+  margin-right: 40px;
+  transition: 0.1s; }
+  .nav__item:hover {
+    color: #E3B873; }
 
 .phone {
   color: #E3B873; }
@@ -384,7 +393,6 @@ template {
 
 .hero {
   position: relative;
-  padding-top: 100px;
   background: #131313 url("../img/hero-bg.jpg") no-repeat center/cover;
   height: 100vh;
   color: #FFFFFF;
@@ -392,9 +400,17 @@ template {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start; }
+  .hero::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(19, 19, 19, 0.7); }
   .hero__content {
     margin-left: 1px;
     max-width: 550px; }
+  .hero__container {
+    position: relative; }
   .hero__instagram {
     display: flex;
     justify-content: center;
@@ -418,6 +434,14 @@ template {
     text-transform: uppercase;
     color: #FFFFFF;
     text-decoration: none; }
+    .hero__scroll-down::after {
+      content: "";
+      background: url("../img/scroll-down.svg") no-repeat center;
+      margin-left: 12px;
+      width: 30px;
+      height: 30px;
+      border: 1.5px solid #E3B873;
+      border-radius: 50%; }
   .hero__text {
     font-size: 22px;
     line-height: 30px;
@@ -425,10 +449,18 @@ template {
     margin-bottom: 41px; }
 
 .instagram__link {
+  display: flex;
+  align-items: center;
   text-transform: uppercase;
   text-decoration: none;
-  color: #FFFFFF;
+  color: #E3B873;
   transform: rotate(90deg); }
+  .instagram__link::after {
+    content: "";
+    margin-left: 8px;
+    width: 50px;
+    height: 1px;
+    background-color: #E3B873; }
 
 .title {
   margin: 0;

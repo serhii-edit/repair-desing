@@ -1,6 +1,6 @@
 .hero 
   position: relative
-  padding-top: 100px
+  // padding-top: 100px
   background: $dark url("../img/hero-bg.jpg") no-repeat center / cover
   height: 100vh
   color: $light
@@ -8,9 +8,18 @@
   flex-direction: column
   justify-content: center
   align-items: flex-start
+  &::before
+    content: ""
+    position: absolute
+    width: 100%
+    height: 100%
+    background-color: rgba($dark, 0.7)
   &__content
     margin-left: 1px
     max-width: 550px
+  &__container
+    position: relative
+    // z-index: 2
 
   &__instagram
     display: flex
@@ -36,6 +45,15 @@
     text-transform: uppercase
     color: $light
     text-decoration: none
+    &::after
+      content: ""
+      background: url("../img/scroll-down.svg") no-repeat center
+      margin-left: 12px
+      width: 30px
+      height: 30px
+      border: 1.5px solid $primary
+      border-radius: 50%
+       
   &__text 
     font-size: 22px;
     line-height: 30px;
@@ -43,16 +61,25 @@
     margin-bottom: 41px
 
 .instagram__link
+  display: flex
+  align-items: center
   // display: inline-block
   text-transform: uppercase
   text-decoration: none
-  color: $light
+  color: $primary
   transform: rotate(90deg)
+  &::after
+    content: ""
+    margin-left: 8px
+    width: 50px
+    height: 1px
+    background-color: $primary
+
 .title
   margin: 0
   text-transform: uppercase
   font-size: 40px;
   line-height: 53px;
-  font-family: 'Yeseva One', cursive;
+  font-family: 'Yeseva One', cursive
   &_primary
     color: $primary
