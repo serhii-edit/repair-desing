@@ -1,13 +1,27 @@
 @font-face {
   font-family: 'Futura Book';
-  src: url("../fonts/futura/FuturaBookC-Italic.woff2") format("woff");
+  src: url("../fonts/futura/FuturaBookC-Italic.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: wrap; }
 
 @font-face {
-  font-family: 'FuturaDemiC';
-  src: url("../fonts/futura/FuturaDemiC.woff2") format("woff");
+  font-family: 'Futura Demi';
+  src: url("../fonts/futura/FuturaDemiC.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: wrap; }
+
+@font-face {
+  font-family: 'Futura Book';
+  src: url("../fonts/futura/FuturaBookC.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: wrap; }
+
+@font-face {
+  font-family: 'Futura Demi';
+  src: url("../fonts/futura/FuturaLightC-Italic.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: wrap; }
@@ -362,22 +376,6 @@ body {
   font-family: "Futura Book";
   font-size: 14px; }
 
-.section_title {
-  text-align: center;
-  text-transform: uppercase;
-  font-family: "Yeseva One", cursive; }
-  .section_title__image::before, .section_title__image::after {
-    content: "";
-    margin: 0 9px;
-    border-radius: 30px;
-    width: 32px;
-    height: 2px;
-    background-color: #E3B873; }
-  .section_title__image {
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-
 .header {
   position: fixed;
   top: 0;
@@ -496,3 +494,19 @@ body {
   font-family: 'Yeseva One', cursive; }
   .title_primary {
     color: #E3B873; }
+
+.section_title {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Yeseva One", cursive; }
+  .section_title__image::before, .section_title__image::after {
+    content: "";
+    margin: 0 9px;
+    border-radius: 30px;
+    width: 32px;
+    height: 2px;
+    background-color: #E3B873; }
+  .section_title__image {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
