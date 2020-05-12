@@ -336,7 +336,8 @@ template {
   padding: 13px 20px;
   border: none;
   border-radius: 2px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-size: 0.93rem; }
   .button:hover {
     cursor: pointer; }
 
@@ -376,6 +377,9 @@ body {
   font-family: "Futura Book";
   font-size: 14px; }
 
+html {
+  font-size: 1rem; }
+
 .header {
   position: fixed;
   top: 0;
@@ -401,7 +405,7 @@ body {
   color: #FFFFFF;
   text-decoration: none;
   text-transform: uppercase;
-  margin-right: 40px;
+  margin-right: 2.85rem;
   transition: 0.1s; }
   .nav__item:hover {
     color: #E3B873; }
@@ -431,8 +435,8 @@ body {
     left: 0;
     background-color: rgba(19, 19, 19, 0.7); }
   .hero__content {
-    margin-left: 1px;
-    max-width: 550px; }
+    margin-left: 4.28rem;
+    max-width: 39.28rem; }
   .hero__container {
     position: relative; }
   .hero__instagram {
@@ -453,8 +457,8 @@ body {
     bottom: 0;
     left: 0;
     background-color: #131313;
-    min-width: 247px;
-    min-height: 97px;
+    min-width: 17.6rem;
+    min-height: 6.92rem;
     text-transform: uppercase;
     color: #FFFFFF;
     text-decoration: none; }
@@ -467,7 +471,7 @@ body {
       border: 1.5px solid #E3B873;
       border-radius: 50%; }
   .hero__text {
-    font-size: 22px;
+    font-size: 1.57rem;
     line-height: 30px;
     max-width: 504px;
     margin-bottom: 41px; }
@@ -489,7 +493,7 @@ body {
 .title {
   margin: 0;
   text-transform: uppercase;
-  font-size: 40px;
+  font-size: 2.857rem;
   line-height: 53px;
   font-family: 'Yeseva One', cursive; }
   .title_primary {
@@ -510,3 +514,42 @@ body {
     display: flex;
     align-items: center;
     justify-content: center; }
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 12px; }
+  __item {
+    margin-right: 1rem; } }
+
+@media screen and (max-width: 992px) {
+  .hero__instagram {
+    display: none; }
+  .hero__content {
+    margin-left: 0; }
+  .nav {
+    display: none; } }
+
+@media screen and (max-width: 570px) {
+  .contacts__phone {
+    margin-right: 0;
+    color: #FFFFFF;
+    text-transform: none; }
+  .contacts__button {
+    display: none; }
+  .title {
+    font-size: 1.64rem;
+    line-height: 132.83%; }
+  .hero__button {
+    display: block;
+    min-width: 21rem;
+    margin-bottom: 1.85rem; }
+  .hero__content {
+    max-width: 22.85rem; }
+  .hero__text {
+    font-size: 1.28rem;
+    line-height: 135.84%;
+    margin-bottom: 2.21rem; } }
+
+@media screen and (max-height: 535px) {
+  .hero__scroll-down {
+    display: none; } }
