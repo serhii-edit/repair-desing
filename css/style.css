@@ -436,7 +436,8 @@ html {
     background-color: rgba(19, 19, 19, 0.7); }
   .hero__content {
     margin-left: 4.28rem;
-    max-width: 39.28rem; }
+    max-width: 39.28rem;
+    margin-bottom: 12rem; }
   .hero__container {
     position: relative; }
   .hero__instagram {
