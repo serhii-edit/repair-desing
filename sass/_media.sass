@@ -13,7 +13,7 @@
       margin-left: 0
   .nav
     display: none
-@media screen and ( max-width: 570px )
+@media screen and ( max-width: 576px )
   .contacts
     &__phone
       margin-right: 0
@@ -23,21 +23,30 @@
       display: none
 
   .title
-    font-size: 1.64rem
+    font-size: 2.3rem
     line-height: 132.83%;
 
   .hero
     &__button
       display: block
-      min-width: 21rem
-      margin-bottom: 1.85rem
+      min-width: 100%
+      padding: 23px 0
+      margin-bottom: 2rem
     &__content
-      max-width: 22.85rem
+      // max-width: 22.85rem
+      // width: 100%
+      margin: 0 auto
+      margin-bottom: -61px
 
     &__text
-      font-size: 1.28rem
-      line-height: 135.84%;
+      font-size: 1.68rem
+      width: 100%
+      line-height: 145.84%
       margin-bottom: 2.21rem
+    .hero__scroll-down
+      display: none
+    
+    
 
 @media screen and ( max-height: 535px )
   .hero
