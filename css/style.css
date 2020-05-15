@@ -644,3 +644,7 @@ html {
       margin-bottom: 5.714rem; }
   .card__text {
     margin-left: 0; } }
+
+@media screen and (max-width: 1517px) {
+  .logo {
+    margin-left: 0; } }
