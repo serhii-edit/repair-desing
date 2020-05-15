@@ -648,3 +648,31 @@ html {
 @media screen and (max-width: 1517px) {
   .logo {
     margin-left: 0; } }
+
+@media screen and (max-width: 365px) {
+  .hero__title {
+    font-size: 24px; }
+  .hero__text {
+    font-size: 18px; }
+  .logo {
+    font-size: 12px; }
+  .phone {
+    font-size: 13px; } }
+
+@media screen and (max-height: 475px) {
+  .hero__title {
+    font-size: 20px; }
+  .hero__text {
+    font-size: 15px; } }
+
+@media screen and (max-width: 573px) {
+  .hero__content {
+    position: relative; }
+  .button_primary {
+    margin: 35px 0px 0px 0px; }
+  .button_outline {
+    margin: 0;
+    position: absolute;
+    bottom: -94px; }
+  .hero__title {
+    margin-top: -42px; } }
