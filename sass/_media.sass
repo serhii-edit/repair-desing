@@ -15,7 +15,7 @@
 
 @media screen and ( max-width: 1250px )
   html
-    font-size: 12px
+    font-size: 13px
   .nav
   &__item
       // margin-right: 1rem
@@ -45,7 +45,7 @@
       display: none
 
   .title
-    font-size: 2.3rem
+    font-size: 2.1rem
     line-height: 132.83%;
 
   .hero
@@ -62,11 +62,20 @@
 
     &__text
       font-size: 1.68rem
-      width: 100%
-      line-height: 145.84%
-      margin-bottom: 2.21rem
+      width: 90%
     .hero__scroll-down
       display: none
+    
+  .hero__content
+    position: relative
+  .button_primary
+    margin: 35px 0px 0px 0px
+  .button_outline
+    margin: 0
+    position: absolute
+    bottom: -94px;
+  .hero__title
+    margin-top: -42px
 
 @media screen and ( max-height: 535px )
   .hero
@@ -79,9 +88,34 @@
     align-items: center
     .types__card
       margin-bottom: 5.714rem
+  .card__pricetag
+    font-size: 1.450rem
+    width: 228px
+    height: 48px
+    color: $light
+    text-align: center
+    line-height: 48px
+    background: #E3B873
+    box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3)
+  .card
+    &__text
+      margin-top: -10.50rem
+      max-width: 24rem
+      height: 295px
+    &__title
+      font-size: 1.195rem
+      margin-top: 0px
+    &__list
+      padding-left: 1.10rem
+      // margin: 0
+      margin-top: -0.3rem
+      // font-size: 1.000rem
+      line-height: 2.05rem
   .card
     &__text
       margin-left: 0
+  .section_title__heading
+    font-size: 2.2rem
 
 @media screen and ( max-width: 1517px )
   .logo
@@ -102,20 +136,3 @@
     font-size: 20px
   .hero__text
     font-size: 15px
-
-@media screen and ( max-width: 573px )
-  .hero__content
-    position: relative
-  .button_primary
-    margin: 35px 0px 0px 0px
-  .button_outline
-    margin: 0
-    position: absolute
-    bottom: -94px;
-
-  .hero__title
-    margin-top: -42px
-  // .button_primary
-    // margin-bottom: 0
-  // .button_outline
-    // margin-top: 10px

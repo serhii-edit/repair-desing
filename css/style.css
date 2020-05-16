@@ -453,6 +453,7 @@ html {
     left: 0;
     background-color: rgba(19, 19, 19, 0.7); }
   .hero__content {
+    position: relative;
     margin-left: 4.28rem;
     max-width: 39.28rem; }
   .hero__container {
@@ -488,10 +489,9 @@ html {
       border: 1.5px solid #E3B873;
       border-radius: 50%; }
   .hero__text {
-    font-size: 1.38rem;
-    line-height: 2.15rem;
+    font-size: 1.37rem;
     max-width: 504px;
-    margin-bottom: 41px; }
+    margin-bottom: 20px; }
 
 .instagram__link {
   display: flex;
@@ -508,13 +508,16 @@ html {
     background-color: #E3B873; }
 
 .title {
-  margin: 0;
+  margin: 0px;
   text-transform: uppercase;
   font-size: 2.537rem;
   line-height: 53px;
   font-family: 'Yeseva One', cursive; }
   .title_primary {
     color: #E3B873; }
+
+.hero__button {
+  margin-top: 25px; }
 
 .section_title {
   text-align: center;
@@ -548,39 +551,78 @@ html {
 .card__text {
   position: relative;
   margin: 0 auto;
-  padding-left: 2.214rem;
-  padding-right: 2.214rem;
-  padding-bottom: 2rem;
-  margin-top: -9rem;
-  max-width: 20.7rem;
+  padding: 28px 2.214rem 0 2.214rem;
+  padding-bottom: 3rem;
+  margin-top: -8.50rem;
+  max-width: 21rem;
+  height: 286px;
   background-color: #fff;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03); }
 
 .card__title {
   font-family: "Yeseva One", cursive;
-  font-size: 1.28rem;
-  padding-top: 1.55rem; }
+  font-size: 1.155rem;
+  margin-top: 0px; }
 
 .card__list {
-  padding-left: 1rem;
+  padding-left: 1.70rem;
   margin: 0;
   margin-top: -0.95rem;
   color: #959595;
-  font-size: 1.07rem;
-  line-height: 1.60rem;
+  font-size: 1.000rem;
+  line-height: 1.645rem;
   padding-bottom: 2.07rem; }
 
 .card__pricetag {
   position: absolute;
   left: 0;
-  bottom: -1.95rem;
+  bottom: -1.55rem;
   font-family: "Yeseva One", cursive normal normal;
   text-transform: uppercase;
-  font-size: 1.28rem;
-  padding: 1.214rem 2.100rem;
+  width: 230px;
+  font-size: 1.285rem;
+  height: 48px;
   color: #FFFFFF;
+  text-align: center;
+  line-height: 48px;
   background: #E3B873;
   box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3); }
+
+.section_subtitle {
+  text-align: center;
+  width: 59%;
+  margin: 0 auto;
+  margin-top: 23px; }
+
+.section__subtitle_span {
+  text-transform: none;
+  font-size: 1.25rem;
+  font-family: "Futura Demi";
+  line-height: 23px; }
+
+.desing__card_text {
+  height: 0; }
+
+.section__desing_row {
+  margin-top: 2.785rem; }
+
+.desing__card_text1 {
+  height: 211px;
+  padding-left: 30px; }
+
+.desing__card_text2 {
+  height: 285px;
+  padding-left: 24.5px; }
+
+.desing__card_text3 {
+  height: 414px;
+  padding-left: 16.5px; }
+
+.card__title_desing {
+  padding-top: 8px; }
+
+.card__pricetag_desing {
+  bottom: -2.155rem; }
 
 @media screen and (max-width: 1299px) {
   .nav__item {
@@ -592,7 +634,7 @@ html {
 
 @media screen and (max-width: 1250px) {
   html {
-    font-size: 12px; } }
+    font-size: 13px; } }
 
 @media screen and (max-width: 1110px) {
   .nav__item {
@@ -614,7 +656,7 @@ html {
   .contacts__button {
     display: none; }
   .title {
-    font-size: 2.3rem;
+    font-size: 2.1rem;
     line-height: 132.83%; }
   .hero__button {
     display: block;
@@ -626,11 +668,19 @@ html {
     margin-bottom: -61px; }
   .hero__text {
     font-size: 1.68rem;
-    width: 100%;
-    line-height: 145.84%;
-    margin-bottom: 2.21rem; }
+    width: 90%; }
   .hero .hero__scroll-down {
-    display: none; } }
+    display: none; }
+  .hero__content {
+    position: relative; }
+  .button_primary {
+    margin: 35px 0px 0px 0px; }
+  .button_outline {
+    margin: 0;
+    position: absolute;
+    bottom: -94px; }
+  .hero__title {
+    margin-top: -42px; } }
 
 @media screen and (max-height: 535px) {
   .hero__scroll-down {
@@ -642,8 +692,30 @@ html {
     align-items: center; }
     .row-3 .types__card {
       margin-bottom: 5.714rem; }
+  .card__pricetag {
+    font-size: 1.450rem;
+    width: 228px;
+    height: 48px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 48px;
+    background: #E3B873;
+    box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3); }
   .card__text {
-    margin-left: 0; } }
+    margin-top: -10.50rem;
+    max-width: 24rem;
+    height: 295px; }
+  .card__title {
+    font-size: 1.195rem;
+    margin-top: 0px; }
+  .card__list {
+    padding-left: 1.10rem;
+    margin-top: -0.3rem;
+    line-height: 2.05rem; }
+  .card__text {
+    margin-left: 0; }
+  .section_title__heading {
+    font-size: 2.2rem; } }
 
 @media screen and (max-width: 1517px) {
   .logo {
@@ -664,15 +736,3 @@ html {
     font-size: 20px; }
   .hero__text {
     font-size: 15px; } }
-
-@media screen and (max-width: 573px) {
-  .hero__content {
-    position: relative; }
-  .button_primary {
-    margin: 35px 0px 0px 0px; }
-  .button_outline {
-    margin: 0;
-    position: absolute;
-    bottom: -94px; }
-  .hero__title {
-    margin-top: -42px; } }
