@@ -588,9 +588,16 @@ html {
   background: #E3B873;
   box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3); }
 
+.desing {
+  background-color: #131313;
+  color: #FFFFFF; }
+
+.card__title_desing {
+  color: #131313; }
+
 .section_subtitle {
   text-align: center;
-  width: 59%;
+  width: 58%;
   margin: 0 auto;
   margin-top: 23px; }
 
@@ -656,18 +663,18 @@ html {
   .contacts__button {
     display: none; }
   .title {
-    font-size: 2.1rem;
+    font-size: 1.5rem;
     line-height: 132.83%; }
   .hero__button {
     display: block;
     min-width: 100%;
-    padding: 23px 0;
-    margin-bottom: 2rem; }
+    padding: 18px 0;
+    margin-bottom: 1rem; }
   .hero__content {
     margin: 0 auto;
     margin-bottom: -61px; }
   .hero__text {
-    font-size: 1.68rem;
+    font-size: 1.35rem;
     width: 90%; }
   .hero .hero__scroll-down {
     display: none; }
@@ -675,12 +682,18 @@ html {
     position: relative; }
   .button_primary {
     margin: 35px 0px 0px 0px; }
+  .hero__title {
+    margin-top: 16px; }
+  .button_primary {
+    margin-top: 54px; }
   .button_outline {
     margin: 0;
     position: absolute;
-    bottom: -94px; }
-  .hero__title {
-    margin-top: -42px; } }
+    margin-top: 20px; }
+  .hero__container {
+    height: 350px; }
+  .hero__content {
+    height: 100%; } }
 
 @media screen and (max-height: 535px) {
   .hero__scroll-down {
@@ -693,14 +706,7 @@ html {
     .row-3 .types__card {
       margin-bottom: 5.714rem; }
   .card__pricetag {
-    font-size: 1.450rem;
-    width: 228px;
-    height: 48px;
-    color: #FFFFFF;
-    text-align: center;
-    line-height: 48px;
-    background: #E3B873;
-    box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3); }
+    font-size: 1.450rem; }
   .card__text {
     margin-top: -10.50rem;
     max-width: 24rem;
@@ -715,7 +721,24 @@ html {
   .card__text {
     margin-left: 0; }
   .section_title__heading {
-    font-size: 2.2rem; } }
+    font-size: 2.2rem; }
+  .desing__card_text1 {
+    height: 213px;
+    margin-top: -132px;
+    margin-bottom: 60px; }
+  .desing__card_text2 {
+    height: 294px;
+    margin-top: -122px;
+    margin-bottom: 60px; }
+  .desing__card_text3 {
+    height: 290px;
+    margin-top: -120px;
+    margin-bottom: 60px; }
+  .card__list {
+    overflow: hidden;
+    height: 80%; }
+  .desing__card_item {
+    font-size: 1.2rem; } }
 
 @media screen and (max-width: 1517px) {
   .logo {
@@ -736,3 +759,6 @@ html {
     font-size: 20px; }
   .hero__text {
     font-size: 15px; } }
+
+@media screen and (max-width: 924px) {
+  bottom: 0; }
