@@ -588,10 +588,6 @@ html {
   background: #E3B873;
   box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3); }
 
-.desing {
-  background-color: #131313;
-  color: #FFFFFF; }
-
 .card__title_desing {
   color: #131313; }
 
@@ -762,3 +758,8 @@ html {
 
 @media screen and (max-width: 924px) {
   bottom: 0; }
+
+@media screen and (max-width: 924px) {
+  .desing {
+    background-color: #131313;
+    color: #FFFFFF; } }
