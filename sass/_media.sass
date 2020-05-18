@@ -36,16 +36,19 @@
 // @media screen and ( max-width: 600px )
 
 @media screen and ( max-width: 576px )
+  .menu__logo
+    font-size: 10px
   .contacts
     &__phone
       margin-right: 0
       color: $light
       text-transform: none
+      font-size: 9px
     &__button
       display: none
 
   .title
-    font-size: 1.5rem
+    font-size: 18px
     line-height: 132.83%;
 
   .hero
@@ -55,34 +58,33 @@
       padding: 18px 0
       margin-bottom: 1rem
     &__content
-      // max-width: 22.85rem
-      // width: 100%
       margin: 0 auto
+      margin-top: -57px
       margin-bottom: -61px
+      position: relative
+      height: 100%
 
     &__text
-      font-size: 1.35rem
+      font-size: 14px
       width: 90%
     .hero__scroll-down
       display: none
-    
-  .hero__content
-    position: relative
+
   .button_primary
     margin: 35px 0px 0px 0px
   .hero__title
     margin-top: 16px
   .button_primary
-    margin-top: 54px
+    margin-top: 23px
   .button_outline
     margin: 0
     position: absolute
     // bottom: 20px
-    margin-top: 20px
+    margin-top: 11px
   .hero__container
     height: 350px
-  .hero__content
-    height: 100%
+  .section_subtitle 
+    width: 100%
 
 @media screen and ( max-height: 535px )
   .hero
@@ -103,19 +105,21 @@
       max-width: 24rem
       height: 295px
     &__title
-      font-size: 1.195rem
+      font-size: 0.9rem
       margin-top: 0px
     &__list
       padding-left: 1.10rem
       // margin: 0
       margin-top: -0.3rem
-      // font-size: 1.000rem
+      font-size: 0.9rem
       line-height: 2.05rem
+  .section__subtitle_span
+    font-size: 1rem
   .card
     &__text
       margin-left: 0
   .section_title__heading
-    font-size: 2.2rem
+    font-size: 1.34rem
   .desing__card_text1
     height: 213px
     margin-top: -132px;
@@ -140,13 +144,10 @@
 
 @media screen and ( max-width: 365px )
   .hero__title
-    font-size: 24px
-  .hero__text
     font-size: 18px
-  .logo
-    font-size: 12px
-  .phone
-    font-size: 13px
+  .hero__text
+    font-size: 14px
+    line-height: 19px
 
 @media screen and ( max-height: 475px )
   .hero__title
