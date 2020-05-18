@@ -652,6 +652,8 @@ html {
   bottom: -2.155rem; }
 
 .modal {
+  opacity: 0;
+  visibility: hidden;
   position: fixed;
   z-index: 199;
   top: 0;
@@ -664,6 +666,9 @@ html {
   display: flex;
   justify-content: center;
   align-items: center; }
+  .modal_visible {
+    opacity: 1;
+    visibility: visible; }
   .modal__dialog {
     max-width: 36.14rem;
     color: #FFFFFF;
