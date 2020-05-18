@@ -8,9 +8,9 @@ const switchModal = () => {
 
 modalBtn.forEach(element => {
   element.addEventListener("click", switchModal);
+  CloseBtn.addEventListener("click", switchModal);
 });
 
-CloseBtn.addEventListener("click", switchModal);
 
 
 
