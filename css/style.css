@@ -681,7 +681,7 @@ html {
     padding: 0;
     width: auto;
     overflow: visible;
-    background: transparent url("../../img/modal-close.svg") no-repeat center;
+    background: transparent url("../img/modal-close.svg") no-repeat center;
     cursor: pointer;
     position: absolute;
     top: 0;
