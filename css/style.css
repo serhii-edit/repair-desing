@@ -681,7 +681,7 @@ html {
     padding: 0;
     width: auto;
     overflow: visible;
-    background: transparent url("../img/modal-close.svg") no-repeat center;
+    background: transparent url("../../img/modal-close.svg") no-repeat center;
     cursor: pointer;
     position: absolute;
     top: 0;
@@ -759,6 +759,8 @@ html {
     display: none; } }
 
 @media screen and (max-width: 576px) {
+  .hero {
+    height: 433px; }
   .menu__logo {
     font-size: 10px; }
   .contacts__phone {
@@ -798,7 +800,7 @@ html {
     position: absolute;
     margin-top: 11px; }
   .hero__container {
-    height: 350px; }
+    margin-top: 60px; }
   .section_subtitle {
     width: 100%; } }
 
@@ -819,7 +821,6 @@ html {
     max-width: 24rem;
     height: 295px; }
   .card__title {
-    font-size: 0.9rem;
     margin-top: 0px; }
   .card__list {
     padding-left: 1.10rem;
@@ -847,8 +848,10 @@ html {
   .card__list {
     overflow: hidden;
     height: 80%; }
+  .card__title_desing {
+    font-size: 1.071rem; }
   .desing__card_item {
-    font-size: 1.2rem; } }
+    font-size: 0.928rem; } }
 
 @media screen and (max-width: 1517px) {
   .logo {
