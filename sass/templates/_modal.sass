@@ -1,5 +1,5 @@
 .modal
-  opacity: 0
+  // opacity: 0
   visibility: hidden
   position: fixed
   z-index: 199
@@ -13,14 +13,10 @@
   display: flex
   justify-content: center
   align-items: center
-  &_visible
-    opacity: 1
-    visibility: visible
-  &_outside
-    opacity: 0
-    visibility: hidden
   &__dialog
-    max-width: 36.14rem // 506px
+    // max-width: 36.14rem // 506px
+    width: 506px;
+    height: 509px;
     color: $light
     position: relative
     background: $dark url("../../img/bg-lines.svg") no-repeat center
@@ -43,21 +39,24 @@
     margin-top: 11px
     margin-right: 12px
   &__title
+    width: 80%
     margin: 0
-    margin-bottom: 2.428rem
+    margin-bottom: 1.650rem
     font-family: "Yeseva One", cursive
     color: $light
     text-align: center
     font-style: normal
     font-weight: normal
-    font-size: 1.357rem
+    font-size: 1.399rem
+    margin-left: 35px
+    line-height: 27px
   
   &__form
     display: flex
     flex-direction: column
   
   &__input
-    margin-bottom: 3.482rem
+    margin-bottom: 3.099rem
     &:last-of-type
       margin-bottom: 1rem
 .form__lable
@@ -85,7 +84,13 @@
     cursor: pointer
     margin-right: 0.64rem
 .modal__policy 
+  margin-top: -15px
+  margin-left: 3px
   margin-bottom: 2.78rem
+  font-size: 1.199rem
 
 .modal__button 
   align-self: flex-end
+  padding: 20px 55px
+  margin-top: 1px
+  margin-right: 0
