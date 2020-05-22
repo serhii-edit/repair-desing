@@ -743,6 +743,12 @@ html {
   margin-top: -10px;
   margin-right: -8px; }
 
+.modal__visible {
+  visibility: visible; }
+
+.modal__close_btn {
+  visibility: hidden; }
+
 @media screen and (max-width: 1299px) {
   .nav__item {
     margin-right: 1.1rem; } }

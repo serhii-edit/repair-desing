@@ -59,14 +59,33 @@ function closeEsc (event) {
 $(document).ready(function () {
 
 
+
   var modal = $(".modal"),
-  modalBtn = $("#modalBtn"),
-  closeBtn = $("#modal__close");
-  console.log(modal);
-  console.log(modalBtn);
-  console.log(closeBtn);
+    modalBtn = $('[data-toggle="modal"]'),
+    closeBtn = $(".modal__close");
+
+  modalBtn.on("click", function () {
+    modal.toggleClass("modal__visible");
+  });
+
+  closeBtn.on("click", function () {
+    modal.toggleClass("modal__visible");
+  });
+
+  $(window).on('keyup', function(event) {
+    if (event.which == 27) {
+      modal.toggleClass("modal__visible");
+    }
+  });
 
 });
 
+$(window).on("click", function(event) {
+  //if you click on anything except the modal itself or the "open modal" link, close the modal
+  if (event.target == modal) {
+    $("body").find(".modal").toggleClass("modal__visible");
+  }
+});
+// Need to Learn this section (top)
 
 
