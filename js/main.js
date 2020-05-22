@@ -83,9 +83,9 @@ $(document).ready(function () {
 $(window).on("click", function(event) {
   //if you click on anything except the modal itself or the "open modal" link, close the modal
   if (event.target == modal) {
-    $("body").find(".modal").toggleClass("modal__visible");
+    $("body").find(".modal").toggleClass("modal__visible"); // Need to Learn this section (left) (line:86)
   }
 });
-// Need to Learn this section (top)
+
 
 
