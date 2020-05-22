@@ -78,6 +78,23 @@ $(document).ready(function () {
     }
   });
 
+  function backTop () {
+    let button = $(".back-to-top");
+    $(window).on("scroll", () => {
+      if ($(this).scrollTop() >= 1500 ) {
+        button.fadeIn();
+      } else {
+        button.fadeOut()
+      }
+    });
+    button.on("click", (e) => {
+      e.preventDefault();
+      $("html").animate({scrollTop: 0}, 700);
+    });
+  };
+  
+  backTop();
+
 });
 
 $(window).on("click", function(event) {
@@ -86,6 +103,4 @@ $(window).on("click", function(event) {
     $("body").find(".modal").toggleClass("modal__visible"); // Need to Learn this section (left) (line:86)
   }
 });
-
-
 
