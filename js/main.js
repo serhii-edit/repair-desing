@@ -16,7 +16,7 @@
 //   window.addEventListener("click", outside);
 // });
 
-
+/* 
 // Get modal elemet
 var modal = document.getElementById("modal");
 // Get open modal button
@@ -54,7 +54,19 @@ function closeEsc (event) {
     modal.style.visibility = "hidden";
   }
 }
+*/
 
+$(document).ready(function () {
+
+
+  var modal = $(".modal"),
+  modalBtn = $("#modalBtn"),
+  closeBtn = $("#modal__close");
+  console.log(modal);
+  console.log(modalBtn);
+  console.log(closeBtn);
+
+});
 
 
 

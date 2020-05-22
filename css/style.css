@@ -670,7 +670,7 @@ html {
     max-height: 509px;
     color: #FFFFFF;
     position: relative;
-    background: #131313 url("../../img/bg-lines.svg") no-repeat center;
+    background: #131313 url("../img/bg-lines.svg") no-repeat center;
     padding: 2.357rem 3.5rem 1.928rem 3.5rem; }
   .modal__close {
     border: none;
@@ -678,7 +678,7 @@ html {
     padding: 0;
     width: auto;
     overflow: visible;
-    background: transparent url("../../img/modal-close.svg") no-repeat center;
+    background: transparent url("../img/modal-close.svg") no-repeat center;
     cursor: pointer;
     position: absolute;
     top: 0;
