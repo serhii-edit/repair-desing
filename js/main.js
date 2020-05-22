@@ -81,7 +81,7 @@ $(document).ready(function () {
   function backTop () {
     let button = $(".back-to-top");
     $(window).on("scroll", () => {
-      if ($(this).scrollTop() >= 1500 ) {
+      if ($(this).scrollTop() >= 650 ) {
         button.fadeIn();
       } else {
         button.fadeOut()
