@@ -96,7 +96,8 @@
     &__scroll-down
       display: none
 
-
+// @media screen and ( max-height: 576px )
+  
 
 @media screen and ( max-width: 925px )
   .row-3
@@ -212,3 +213,49 @@
   .desing
     background-color: $dark
     color: $light
+
+// Different (projects)<>(down)
+
+@media screen and ( max-width: 950px )
+  .row 
+    flex-direction: column
+    align-items: none
+    margin: 0 auto
+    width: auto
+    max-width: 100%
+  .col-30
+    max-width: 100%
+    // margin-left: -35px
+  .col-50 
+    max-width: 100%
+  .swiper-slide 
+    width: none
+  .spiwer-wpapper_margin
+    margin-top: 25px
+
+@media screen and ( max-width: 575px )
+  .section_title__heading__primary
+    font-size: 1.571rem
+  .section__title_text_margin
+    font-size: 1.071rem
+    width: 90%
+  .swiper-slide__heading
+    font-size: 1.071rem
+    margin-bottom: 15px
+  .swiper-slide__value
+    font-size: 1.071rem
+
+  .section_title__heading__primary
+    line-height: 34px
+  .section__title_text
+    line-height: 23px
+  .swiper-slide__heading
+    font-size: 13px
+  .swiper-slide__margin
+    margin-bottom: 55px
+  .section_title__word::after
+    display: none
+
+// @media screen and ( max-width: 380px )
+  
+
