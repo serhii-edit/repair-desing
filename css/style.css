@@ -664,12 +664,12 @@ template {
 
 .swiper-button-prev {
   left: 0;
-  background: url("../../img/arrow-prev.svg") no-repeat center;
+  background: url("../img/arrow-prev.svg") no-repeat center;
   width: 41px;
   height: 14px; }
 
 .swiper-button-next {
-  background: url("../../img/arrow-next.svg") no-repeat center;
+  background: url("../img/arrow-next.svg") no-repeat center;
   width: 41px;
   height: 14px; }
 
@@ -949,6 +949,8 @@ html {
     text-transform: none;
     font-size: 0.944rem; }
   .contacts__button {
+    display: none; }
+  .hero::after {
     display: none; }
   .title {
     font-size: 18px;
