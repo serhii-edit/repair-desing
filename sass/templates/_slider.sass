@@ -1,70 +1,88 @@
-.swiper-slide
-  display: flex
-  flex-wrap: wrap
-.section_title__heading 
-  
-.swiper-slide__text
-  width: 40%
-  margin-bottom: 30px
-  // margin-right: 36px
-
-.swiper-slide__heading
-  font-size: 1.120rem
-  color: $primary
+.section_title_left
+  text-align: left !important
   font-family: 'Yeseva One', cursive
+
+.section_title__heading
+  line-height: 37px
+  font-size: 1.699rem
+  font-family: "Yeseva One", cursive
+
+.section_title__heading_after
+  display: flex
+  align-items: center
+
+.section_title__heading_after::after
+  content: ""
+  background-color: $primary
+  width: 92px
+  height: 1px
+  margin-left: 2rem
+
+.section_title__text
+  font-size: 14.5px
+  line-height: 29px
+  text-transform: none
+  font-weight: 100
+  max-width: 515px
+  margin-bottom: 27px
+
+.swiper_slide__text_i
+  display: inline-block
+.swiper_slide__text_b
+  display: inline-block
+
+.swiper_slide__text
+  min-width: 30%
+  margin-bottom: 22px
+  margin-right: 0px
+
+
+.swiper__slide_heading
+  margin-bottom: 10px
+  
+.swiper__slide_heading_primary
+  color: $primary
   text-transform: uppercase
-  margin-bottom: 9px
 
+.swiper__slide_heading
+  font-size: 1.240rem
+
+.swiper-pagination-bullet
+  background-color: rgb ($light 0.3)
 .swiper-pagination-bullet-active
-  background-color: $light
+  background-color: #fff
 
-.swiper-button-prev::after
-  display: none
-.swiper-button-next::after
+.swiper-container-horizontal>.swiper-pagination-bullets
+  bottom: 0
+  top: 260px
 
+.swiper-button-prev::after,
+.swiper-button-next:after
   display: none
+
+.swiper-button-next,
+.swiper-button-prev
+  bottom: 0
+  margin-top: 103px
 
 .swiper-button-prev
+  left: 0
   background: url("../../img/arrow-prev.svg") no-repeat center
-  // background-size: 41px
   width: 41px
   height: 14px
 
 .swiper-button-next
   background: url("../../img/arrow-next.svg") no-repeat center
-  // background-size: 41px
   width: 41px
   height: 14px
 
-.swiper-button-prev,
-.swiper-button-next
-  bottom: 0
-  left: 0
-  top: auto
-
-.swiper-slide__margin
-  margin-bottom: 103px 
-
-.section__title_text_margin
-  margin-bottom: 28px
-
 .swiper-container-horizontal>.swiper-pagination-bullets
   width: auto
-  bottom: 0
-  
-.swiper-pagination-bullet
-  background-color: rgba($light, 0.3)
-  width: 10px
-  height: 10px
+  bottom: -1px
 
-.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet
-  margin: 0 10px
+.swiper-slider__img
 
-.col-50
-  margin-top: 20px
-  margin-right: -35px
 
-// .swiper-slide__imgage
-.spiwer-wpapper_margin
-  max-width: 550px
-  // background: cover/center
+.img-projects
+  min-width: 628px
+

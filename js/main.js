@@ -95,10 +95,10 @@ $(document).ready(function () {
   
   backTop();
 
-  //initialize swiper when document ready
   var mySwiper = new Swiper ('.swiper-container', {
     // Optional parameters
     loop: true,
+
     pagination: {
       el: '.swiper-pagination',
       type: 'bullets',
@@ -111,12 +111,11 @@ $(document).ready(function () {
 
   var next = $(".swiper-button-next");
   var prev = $(".swiper-button-prev");
-  var bullets = $(".swiper-pagination")
+  var bullets = $(".swiper-pagination");
 
-  next.css("left", prev.width() + 10 + bullets.width() + 25);
-  bullets.css("left", prev.width() + 20);
+  next.css("left", prev.width() + 50 + bullets.width() + 30)
+  bullets.css("left", prev.width() + 30)
 
-});
 
 $(window).on("click", function(event) {
   //if you click on anything except the modal itself or the "open modal" link, close the modal
@@ -125,4 +124,4 @@ $(window).on("click", function(event) {
   }
 });
 
-
+});
