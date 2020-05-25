@@ -446,10 +446,10 @@ template {
   justify-content: space-between; }
 
 .col-30 {
-  width: 30%; }
+  width: 45%; }
 
 .col-50 {
-  width: 50%; }
+  width: 55%; }
 
 .header {
   position: fixed;
@@ -621,7 +621,8 @@ template {
 .swiper_slide__text {
   min-width: 30%;
   margin-bottom: 22px;
-  margin-right: 0px; }
+  margin-right: 0px;
+  vertical-align: top; }
 
 .swiper__slide_heading {
   margin-bottom: 10px; }
@@ -668,7 +669,7 @@ template {
   bottom: -1px; }
 
 .img-projects {
-  min-width: 628px; }
+  min-width: 100%; }
 
 .section_title {
   text-align: center;
