@@ -216,10 +216,34 @@
 
 // Different (projects)<>(down)
 
-@media screen and ( max-width: 1050px )
+// @media screen and ( max-width: 1015px )
+@media screen and ( max-width: 850px )
+  .section_title__heading_after::after
+    display: none
   .row
     flex-direction: column
   .col-50
     margin: 0 auto
-  .swiper-slider__img
-    max-width: 100%
+    width: 100%
+  .col-30
+    margin: 0 auto
+    width: 100%
+  .swiper-slider__img, .swiper-slide-active
+    width: none
+  .swiper_slide__text
+    width: 26%
+  .swiper-container-horizontal>.swiper-pagination-bullets
+    top: 200px
+  .swiper-button-next, .swiper-button-prev
+    top: 223px
+
+@media screen and ( max-width: 380px )
+  .section_title__heading
+    line-height: 35px
+  .section_title__text
+    font-size: 13.5px
+    line-height: 15.5px
+  .section_title__heading
+    margin-bottom: 25px
+  .swiper_slide__text
+    width: 40%

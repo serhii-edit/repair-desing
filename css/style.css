@@ -591,7 +591,8 @@ template {
 .section_title__heading {
   line-height: 37px;
   font-size: 1.699rem;
-  font-family: "Yeseva One", cursive; }
+  font-family: "Yeseva One", cursive;
+  margin-top: 0px; }
 
 .section_title__heading_after {
   display: flex;
@@ -610,7 +611,14 @@ template {
   text-transform: none;
   font-weight: 100;
   max-width: 515px;
-  margin-bottom: 27px; }
+  margin-bottom: 27px;
+  padding-right: 20px; }
+
+.swiper-container {
+  position: relative; }
+
+.swiper-container__height {
+  height: 280px; }
 
 .swiper_slide__text_i {
   display: inline-block; }
@@ -619,10 +627,11 @@ template {
   display: inline-block; }
 
 .swiper_slide__text {
-  min-width: 30%;
+  width: 34%;
   margin-bottom: 22px;
   margin-right: 0px;
-  vertical-align: top; }
+  vertical-align: top;
+  margin-right: 20px; }
 
 .swiper__slide_heading {
   margin-bottom: 10px; }
@@ -642,7 +651,7 @@ template {
 
 .swiper-container-horizontal > .swiper-pagination-bullets {
   bottom: 0;
-  top: 260px; }
+  top: 261px; }
 
 .swiper-button-prev::after,
 .swiper-button-next:after {
@@ -651,7 +660,7 @@ template {
 .swiper-button-next,
 .swiper-button-prev {
   bottom: 0;
-  margin-top: 103px; }
+  top: 284px; }
 
 .swiper-button-prev {
   left: 0;
@@ -669,7 +678,7 @@ template {
   bottom: -1px; }
 
 .img-projects {
-  min-width: 100%; }
+  max-width: 100%; }
 
 .section_title {
   text-align: center;
@@ -1074,10 +1083,33 @@ html {
     background-color: #131313;
     color: #FFFFFF; } }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 850px) {
+  .section_title__heading_after::after {
+    display: none; }
   .row {
     flex-direction: column; }
   .col-50 {
-    margin: 0 auto; }
-  .swiper-slider__img {
-    max-width: 100%; } }
+    margin: 0 auto;
+    width: 100%; }
+  .col-30 {
+    margin: 0 auto;
+    width: 100%; }
+  .swiper-slider__img, .swiper-slide-active {
+    width: none; }
+  .swiper_slide__text {
+    width: 26%; }
+  .swiper-container-horizontal > .swiper-pagination-bullets {
+    top: 200px; }
+  .swiper-button-next, .swiper-button-prev {
+    top: 223px; } }
+
+@media screen and (max-width: 380px) {
+  .section_title__heading {
+    line-height: 35px; }
+  .section_title__text {
+    font-size: 13.5px;
+    line-height: 15.5px; }
+  .section_title__heading {
+    margin-bottom: 25px; }
+  .swiper_slide__text {
+    width: 40%; } }
