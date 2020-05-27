@@ -115,13 +115,84 @@ $(document).ready(function () {
 
   next.css("left", prev.width() + 50 + bullets.width() + 30)
   bullets.css("left", prev.width() + 30)
+    
+});
 
-
-$(window).on("click", function(event) {
-  //if you click on anything except the modal itself or the "open modal" link, close the modal
-  if (event.target == modal) {
-    $("body").find(".modal").toggleClass("modal__visible"); // Need to Learn this section (left) (line:86)
+$(".modal__form").validate({
+  errorElement: "div", 
+  errorClass: "inbalid",
+  rules: {
+    userName: {
+      required: true,
+      minlength: 2,
+      maxlength: 15
+    },
+    userPhone: "required",
+    userEmail: {
+      required: true,
+      email: true
+    }
+  },
+  messages: {
+    userName: {
+      required: "Пожалуйста, укажите ваше Имя",
+      minlength: "Имя должно быть не менее 2 букв",
+      maxlength: "Имя должно быть не больше 15 букв"
+    },
+    userPhone: "Пожалуйста, укажите (номер) вашего телефона",
+    userEmail: {
+      required: "Обязательно введите вашу почту",
+      email: "Ваш адрес электронной почты должен быть в формате name@domain.com"
+    }
   }
 });
 
+
+$(".footer__form").validate({
+  errorElement: "div", 
+  errorClass: "inbalid",
+  rules: {
+    userName: {
+      required: true,
+      minlength: 2,
+      maxlength: 15
+    },
+    userQuestion: "required",
+    userPhone: "required",
+  },
+  messages: {
+    userName: {
+      required: "Пожалуйста, укажите ваше Имя",
+      minlength: "Имя должно быть не менее 2 букв",
+      maxlength: "Имя должно быть не больше 15 букв"
+    },
+    userPhone: "Пожалуйста, укажите (номер) вашего телефона",
+    userQuestion: "Напишите свой вопрос"
+  }
 });
+
+$(".control__form").validate({
+  errorElement: "div", 
+  errorClass: "inbalid",
+  rules: {
+    userName: {
+      required: true,
+      minlength: 2,
+      maxlength: 15,
+    },
+    userPhone: "required",
+  },
+  messages: {
+    userName: {
+      required: "Пожалуйста, укажите ваше Имя",
+      minlength: "Имя должно быть не менее 2 букв",
+      maxlength: "Имя должно быть не больше 15 букв"
+    },
+    userPhone: "Пожалуйста, укажите (номер) вашего телефона",
+  }
+});
+
+
+// mask for phone
+$('input[type="tel"]').mask("+1 (000) 000-0000", {placeholder: "+1 (___) ___-____"});
+

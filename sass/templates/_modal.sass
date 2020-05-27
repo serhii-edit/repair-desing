@@ -16,7 +16,7 @@
   &__dialog
     // max-width: 36.14rem // 506px
     max-width: 506px
-    max-height: 509px
+    // max-height: 509px
     color: $light
     position: relative
     background: $dark url("../img/bg-lines.svg") no-repeat center
@@ -58,11 +58,15 @@
     margin-left: -7px
   
   &__input
-    margin-bottom: 2.065rem
+    // margin-bottom: 2.065rem
     margin-top: -2px
     // margin-left: -7px
     &:last-of-type
       margin-bottom: 1rem
+.modal__input_group
+  display: flex
+  flex-direction: column
+  margin-bottom: 2.065rem
 .form__lable
   margin-top: 7px
 
@@ -102,3 +106,10 @@
 
 .modal__close_btn 
   visibility: hidden
+
+.inbalid
+  color: tomato
+
+input
+  &.inbalid
+    border-bottom: 1px solid tomato
