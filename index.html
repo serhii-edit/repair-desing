@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Design Repair</title>
 </head>
@@ -51,16 +51,16 @@
 
       <div class="container hero__container">
       <div class="hero__content">
-        <h1 class="title hero__title wow animate__animated animate__fadeInRight" data-wow-delay="0.1s">
+        <h1 class="title hero__title wow animate__animated animate__fadeInRight" data-wow-delay="0.2s">
           Турецкий ремонт 
             <br>в<span class="title_primary"> <!-- &nbsp did't work -->
             Ростове-на-дону
           </span>
         </h1>
-        <p class="subtitle hero__text wow animate__animated animate__fadeInRight" data-wow-delay="0.3s">
+        <p class="subtitle hero__text wow animate__animated animate__fadeInRight" data-wow-delay="0.4s">
           Получите готовый ремонт под ключ в срок с экономией рабочего времени до 45 дней и 20% от стоимости материалов за счет организации работы
         </p>
-        <button class="button hero__button button_primary wow animate__animated animate__fadeInRight" id="modalBtn" data-toggle="modal" data-wow-delay="5s">
+        <button class="button hero__button button_primary wow animate__animated animate__fadeInRight" id="modalBtn" data-toggle="modal" data-wow-delay="0.6s">
           Рассчитать стоимость
         </button>
         <button class="button hero__button button_outline wow animate__animated animate__fadeInRight" id="modalBtn" data-toggle="modal" data-wow-delay="0.8s">
@@ -70,7 +70,7 @@
       <!-- /.hero__content -->
     </div>
 
-      <a href="#" class="hero__scroll-down">ЛИСТАЙТЕ ВНИЗ</a>
+      <a href="#" class="hero__scroll-down wow animate__animated animate__tada" data-wow-delay="5s" data-wow-duration="1s" data-wow-iteration="4">ЛИСТАЙТЕ ВНИЗ</a>
      </section>
 
      <section class="section section__dark projects">
@@ -81,11 +81,11 @@
           <div class="col-30">
             <div class="section_title section_title_left">
 
-              <h2 class="section_title__heading swiper__slide_heading_primary">
+              <h2 class="section_title__heading swiper__slide_heading_primary wow animate__animated animate__fadeInLeft" data-wow-delay="0.2s">
                Завершеные <span class="section_title__heading_after">проекты</span>
               </h2>
 
-              <p class="section_title__text">
+              <p class="section_title__text wow animate__animated animate__fadeInRight" data-wow-delay="0.5s">
                 На сайте представлена ​​лишь небольшая часть работ, выполняемых нашей компанией. За 14 лет работы на строительном рынке мы осчастливили более 1000 семей
               </p>
               <!-- /.section_title__heading -->
@@ -99,7 +99,7 @@
               <!-- Slides -->
               <div class="swiper-slide">
                 <div class="swiper_slide__text
-                swiper_slide__text_i">
+                swiper_slide__text_i wow animate__animated animate__fadeInUp" data-wow-delay="1.5s">
                   <h3 class="swiper__slide_heading
                   swiper__slide_heading_primary">
                     Город:
@@ -109,7 +109,8 @@
                   </span>
                 </div>
                 <!-- /.swiper_slide__text -->
-                <div class="swiper_slide__text swiper_slide__text_b">
+                <div class="swiper_slide__text swiper_slide__text_b 
+                wow animate__animated animate__fadeInUp" data-wow-delay="1.7s">
                   <h3 class="swiper__slide_heading
                   swiper__slide_heading_primary">
                     Площадь:
@@ -119,7 +120,8 @@
                   </span>
                 </div><br>
                 <!-- /.swiper_slide__text -->
-                <div class="swiper_slide__text swiper_slide__text_i">
+                <div class="swiper_slide__text swiper_slide__text_i
+                wow animate__animated animate__fadeInUp" data-wow-delay="1.9s">
                   <h3 class="swiper__slide_heading
                   swiper__slide_heading_primary">
                     Срок ремонта:
@@ -130,7 +132,9 @@
                 </div>
                 <!-- /.swiper_slide__text -->
 
-                <div class="swiper_slide__text  swiper_slide__text_i">
+                <div class="swiper_slide__text  swiper_slide__text_i
+                wow animate__animated animate__fadeInUp"
+                data-wow-delay="2.1s">
                   <h3 class="swiper__slide_heading
                   swiper__slide_heading_primary">
                     Стоимость:
@@ -261,7 +265,7 @@
                   </div>
 
                   <div class="swiper-slide swiper-slider__img">
-                    <img class="img-projects" src="img/projects.jpg" alt="">
+                    <img class="img-projectst" src="img/projects.jpg" alt="">
                   </div>
               </div>
             </div>
@@ -281,18 +285,20 @@
     <section class="section control">
        <div class="container">
          <div class="section_title control__section_title section_title-light">
-           <h2 class="section_title__heading">
+           <h2 class="section_title__heading wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
             онлайн контроль
            </h2>
            <!-- /.section_title__heading -->
-           <div class="section_title__image">
+           <div class="section_title__image 
+           wow animate__animated animate__fadeIn" data-wow-delay="0.5s">
             <img src="img/camera-online-control.svg" alt="camera">
            </div>
            <!-- /.section_title__image -->
          </div>
          <!-- /.section_title -->
 
-         <div class="control__video video">
+         <div class="control__video video wow animate__animated 
+         animate__fadeInUp" data-wow-delay="0.9s">
            <img src="img/video-play.svg" alt="Push to play - icon" class="video__play">
          </div>
          <!-- /.control__video video -->
@@ -340,11 +346,12 @@
      <section class="section types">
        <div class="container">
         <div class="section_title types__section_title">
-          <h2 class="section_title__heading">
+          <h2 class="section_title__heading wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
             Виды ремонта
           </h2>
           <!-- /.section_title__heading -->
-          <div class="section_title__image">
+          <div class="section_title__image 
+          wow animate__animated animate__fadeIn" data-wow-delay="0.5s">
            <img src="img/tools-hamer.svg" alt="repair-tools-hamer">
           </div>
           <!-- /.section_title__image -->
@@ -352,7 +359,7 @@
         <!-- /.section_title -->
         <div class="row-3">
           <div class="col">
-            <div class="card types__card">
+            <div class="card types__card wow animate__animated animate__fadeIn" data-wow-delay="0.5s">
               <img src="img/types/type-1.jpg" alt="Косметический ремонт, Пустая Комната" class="card_image">
               <div class="card__text">
                 <h3 class="card__title">Косметический ремонт</h3>
@@ -377,7 +384,8 @@
           </div>
           <!-- /.col -->
           <div class="col">
-            <div class="card types__card">
+            <div class="card types__card 
+            wow animate__animated animate__fadeIn" data-wow-delay="0.9s">
               <img src="img/types/type-2.jpg" alt="Капитальный ремонт, Красивая комната" class="card_image">
               <div class="card__text">
                 <h3 class="card__title">Капитальный ремонт</h3>
@@ -402,7 +410,8 @@
           </div>
           <!-- /.col -->
           <div class="col">
-            <div class="card types__card">
+            <div class="card types__card 
+            wow animate__animated animate__fadeIn" data-wow-delay="1.3s">
               <img src="img/types/type-3.jpg" alt="Дизайнерский ремонт, Кухня с крутим дезайном" class="card_image">
               <div class="card__text">
                 <h3 class="card__title">Дизайнерский ремонт</h3>
@@ -437,12 +446,14 @@
      <section class="section  desing">
        <div class="container">
          <div class="section_title desing__section_title">
-          <h2 class="section_title__heading">Дизайн Проект</h2>
-          <div class="section_title__image">
+          <h2 class="section_title__heading 
+          wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">Дизайн Проект</h2>
+          <div class="section_title__image 
+          wow animate__animated animate__fadeIn" data-wow-delay="0.5s">
             <img src="img/pen-ruler.svg" alt="">
           </div>
           
-         <div class="section__subtitle section_subtitle">
+         <div class="section__subtitle section_subtitle animate__animated wow animate__fadeInUp" data-wow-delay="0.9s">
            <span class="section__subtitle_span">
             Дизайн-проект не только помогает сделать ремонт вашей квартиры более современным, но и значительно удешевляет материалы и сокращает время ремонтных работ
            </span>
@@ -452,7 +463,8 @@
 
        <div class="row-3 section__desing_row">
          <div class="col">
-           <div class="card desing__card">
+           <div class="card desing__card 
+           wow animate__animated animate__fadeIn" data-wow-delay="0.5s">
              <img src="img/types/type-1.jpg" alt="">
              <div class="card__text desing__card_text1">
                <h2 class="card__title card__title_desing">Минимальный</h2>
@@ -469,7 +481,8 @@
            </div>
          </div>
          <div class="col">
-           <div class="card desing__card">
+           <div class="card desing__card 
+           wow animate__animated animate__fadeIn" data-wow-delay="1s">
              <img src="img/types/type-3.jpg" alt="">
              <div class="card__text desing__card_text2">
                <h2 class="card__title card__title_desing card__title_desing2">Стандартный</h2>
@@ -489,7 +502,8 @@
            </div>
          </div>
          <div class="col">
-           <div class="card desing__card">
+           <div class="card desing__card 
+           wow animate__animated animate__fadeIn" data-wow-delay="1.3s">
              <img src="img/types/type-2.jpg" alt="">
              <div class="card__text desing__card_text3">
                <h2 class="card__title card__title_desing card__title_desing3">Полный </h2>
@@ -574,7 +588,9 @@
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 
   <script src="js/wow.min.js">
-      new WOW().init();
+  </script>
+  <script>
+    new WOW().init();
   </script>
 
   <script src="js/main.js"></script>

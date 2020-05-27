@@ -590,7 +590,7 @@ template {
   margin-top: 25px; }
 
 .projects {
-  padding-bottom: 30rem; }
+  padding-bottom: 450px; }
 
 .section_title_left {
   text-align: left !important;
@@ -690,7 +690,7 @@ template {
 
 .control__section_title {
   margin-bottom: 31px;
-  margin-top: -30rem; }
+  margin-top: -394px; }
 
 .section_title {
   text-align: center;
@@ -717,7 +717,7 @@ template {
   max-width: 817px;
   min-height: 434px;
   box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15);
-  background: url("../../img/video-mask.jpg") center no-repeat;
+  background: url("../img/video-mask.jpg") center no-repeat;
   margin-bottom: 62px; }
   .control__video::before {
     position: absolute;
@@ -771,13 +771,23 @@ template {
 .control__policy {
   margin-top: 1.3rem;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  margin-top: 30px; }
 
 .control__input-group {
   display: flex;
   flex-direction: column;
   border-bottom: 1px solid rgba(54, 54, 54, 0.3);
   width: 30%; }
+
+.control__lable {
+  margin-top: 0 !important; }
+
+.control__input {
+  padding-top: 0; }
+
+.section_title__heading {
+  font-size: 1.250rem; }
 
 .types__section_title {
   margin-bottom: 2.100rem; }
@@ -1238,7 +1248,7 @@ html {
 
 @media screen and (max-width: 400px) {
   .control__input-group {
-    margin-bottom: 46px; }
+    margin-bottom: 59px; }
   .control__policy {
     font-size: 16px; }
   .control__video {
@@ -1253,4 +1263,9 @@ html {
     line-height: 1.9rem;
     margin-bottom: 25px; }
   .control__text::before {
-    margin-bottom: 14px; } }
+    margin-bottom: 14px; }
+  .control__lable {
+    margin-top: 5px !important;
+    margin-bottom: 2px; }
+  .control__policy {
+    margin-top: -35px; } }
