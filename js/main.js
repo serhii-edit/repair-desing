@@ -207,7 +207,7 @@ $('input[type="tel"]').mask("+1 (000) 000-0000", {placeholder: "+1 (___) ___-___
 ymaps.ready(function () {
   var myMap = new ymaps.Map('map', {
           center: [55.751574, 37.573856],
-          zoom: 9
+          zoom: 9,
       }, {
           searchControlProvider: 'yandex#search'
       }),
@@ -238,6 +238,7 @@ ymaps.ready(function () {
       })
 
   myMap.geoObjects
-      .add(myPlacemark)
+      .add(myPlacemark);
+      myMap.behaviors.disable('scrollZoom');
 });
 
