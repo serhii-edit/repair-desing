@@ -227,7 +227,7 @@ ymaps.ready(function () {
            */
           iconLayout: 'default#image',
           // Custom image for the placemark icon.
-          iconImageHref: '../img/location.png',
+          iconImageHref: '../img/location.svg',
           // The size of the placemark.
           iconImageSize: [32, 32],
           /**
