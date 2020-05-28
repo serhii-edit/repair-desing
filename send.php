@@ -3,6 +3,7 @@
   $userName = $_POST["userName"];
   $userPhone = $_POST["userPhone"];
   $userEmail = $_POST["userEmail"];
+  $userQuestion = $_POST["userQuestion"];
 
 // Load Composer's autoloader
 require 'phpmailer/Exception.php';
@@ -24,7 +25,7 @@ try {
     $mail->Port       = 465;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
     //Recipients
-    $mail->setFrom('serhiifiolow12345@gmail.com', 'Serhii Yakymenko');
+    $mail->setFrom('serhiifiolow12345@gmail.com', 'Repair-Design');
     $mail->addAddress('web.practice550@gmail.com');     // Add a recipient
 
     // Content
@@ -32,7 +33,8 @@ try {
     $mail->Subject = 'New check-in from site';
     $mail->Body    = "User-Name: ${userName},<br>
     User-Phone-Number: ${userPhone}, <br>
-    His-Her User-Email: ${userEmail}";
+    His-Her User-Email: ${userEmail} <br> 
+    User-question: ${userQuestion} <br> ";
 
     $mail->send();
     header("Location: thanks.html");
