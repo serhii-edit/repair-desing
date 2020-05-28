@@ -16,7 +16,6 @@
   &__dialog
     // max-width: 36.14rem // 506px
     max-width: 506px
-    // max-height: 509px
     color: $light
     position: relative
     background: $dark url("../img/bg-lines.svg") no-repeat center
@@ -70,6 +69,10 @@
 .form__lable
   margin-top: 7px
 
+.policy__checkbox
+  opacity: 0
+  visibility: hidden
+
 .policy__label
   display: flex
   align-items: center
@@ -81,19 +84,16 @@
     border-radius: 1px
     cursor: pointer
     margin-right: 0.64rem
-.policy__checkbox
-  // background-color: trensparent
-  opacity: 0
-  visibility: hidden
-  &:checked + 
-    .policy__label
-      &::before
-        background: $primary url("../img/check-policy.svg") no-repeat center / 0.8rem
+
+.policy__checkbox:checked + .policy__label::before
+  background: #E3B873 url(../img/check-policy.svg) no-repeat center/0.8rem;
+
 .modal__policy 
   margin-top: -26px
   margin-left: 0px
   margin-bottom: 2.78rem
   font-size: 1.199rem
+  position: relative
 
 .modal__button 
   align-self: flex-end

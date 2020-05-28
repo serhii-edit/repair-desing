@@ -478,6 +478,115 @@ html {
   background-color: #131313;
   color: #FFFFFF; }
 
+.modal {
+  visibility: hidden;
+  position: fixed;
+  z-index: 199;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 19, 19, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .modal__dialog {
+    max-width: 506px;
+    color: #FFFFFF;
+    position: relative;
+    background: #131313 url("../img/bg-lines.svg") no-repeat center;
+    padding: 2.357rem 3.5rem 1.928rem 3.5rem; }
+  .modal__close {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+    background: transparent url("../img/modal-close.svg") no-repeat center;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 28px;
+    height: 28px;
+    margin-top: 11px;
+    margin-right: 12px; }
+  .modal__title {
+    width: 80%;
+    margin: 0;
+    margin-bottom: 1.350rem;
+    margin-top: -7px;
+    font-family: "Yeseva One", cursive;
+    color: #FFFFFF;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.119rem;
+    margin-left: 35px;
+    line-height: 27px; }
+  .modal__form {
+    display: flex;
+    flex-direction: column;
+    margin-left: -7px; }
+  .modal__input {
+    margin-top: -2px; }
+    .modal__input:last-of-type {
+      margin-bottom: 1rem; }
+
+.modal__input_group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2.065rem; }
+
+.form__lable {
+  margin-top: 7px; }
+
+.policy__checkbox {
+  opacity: 0;
+  visibility: hidden; }
+
+.policy__label {
+  display: flex;
+  align-items: center; }
+  .policy__label::before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    border: 1px solid #E3B873;
+    border-radius: 1px;
+    cursor: pointer;
+    margin-right: 0.64rem; }
+
+.policy__checkbox:checked + .policy__label::before {
+  background: #E3B873 url(../img/check-policy.svg) no-repeat center/0.8rem; }
+
+.modal__policy {
+  margin-top: -26px;
+  margin-left: 0px;
+  margin-bottom: 2.78rem;
+  font-size: 1.199rem;
+  position: relative; }
+
+.modal__button {
+  align-self: flex-end;
+  padding: 20px 45px;
+  margin-top: -10px;
+  margin-right: -8px; }
+
+.modal__visible {
+  visibility: visible; }
+
+.modal__close_btn {
+  visibility: hidden; }
+
+.inbalid {
+  color: tomato; }
+
+input.inbalid {
+  border-bottom: 1px solid tomato; }
+
 .header {
   position: fixed;
   top: 0;
@@ -799,8 +908,10 @@ html {
 .control__input-group {
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid rgba(54, 54, 54, 0.3);
   width: 30%; }
+
+.control__input_border {
+  border-bottom: 1px solid rgba(54, 54, 54, 0.3); }
 
 .control__lable {
   margin-top: 0 !important; }
@@ -905,113 +1016,6 @@ html {
 
 .card__pricetag_desing {
   bottom: -2.155rem; }
-
-.modal {
-  visibility: hidden;
-  position: fixed;
-  z-index: 199;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(19, 19, 19, 0.6);
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .modal__dialog {
-    max-width: 506px;
-    color: #FFFFFF;
-    position: relative;
-    background: #131313 url("../img/bg-lines.svg") no-repeat center;
-    padding: 2.357rem 3.5rem 1.928rem 3.5rem; }
-  .modal__close {
-    border: none;
-    margin: 0;
-    padding: 0;
-    width: auto;
-    overflow: visible;
-    background: transparent url("../img/modal-close.svg") no-repeat center;
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 28px;
-    height: 28px;
-    margin-top: 11px;
-    margin-right: 12px; }
-  .modal__title {
-    width: 80%;
-    margin: 0;
-    margin-bottom: 1.350rem;
-    margin-top: -7px;
-    font-family: "Yeseva One", cursive;
-    color: #FFFFFF;
-    text-align: center;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1.119rem;
-    margin-left: 35px;
-    line-height: 27px; }
-  .modal__form {
-    display: flex;
-    flex-direction: column;
-    margin-left: -7px; }
-  .modal__input {
-    margin-top: -2px; }
-    .modal__input:last-of-type {
-      margin-bottom: 1rem; }
-
-.modal__input_group {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 2.065rem; }
-
-.form__lable {
-  margin-top: 7px; }
-
-.policy__label {
-  display: flex;
-  align-items: center; }
-  .policy__label::before {
-    content: "";
-    width: 18px;
-    height: 18px;
-    border: 1px solid #E3B873;
-    border-radius: 1px;
-    cursor: pointer;
-    margin-right: 0.64rem; }
-
-.policy__checkbox {
-  opacity: 0;
-  visibility: hidden; }
-  .policy__checkbox:checked + .policy__label::before {
-    background: #E3B873 url("../img/check-policy.svg") no-repeat center/0.8rem; }
-
-.modal__policy {
-  margin-top: -26px;
-  margin-left: 0px;
-  margin-bottom: 2.78rem;
-  font-size: 1.199rem; }
-
-.modal__button {
-  align-self: flex-end;
-  padding: 20px 45px;
-  margin-top: -10px;
-  margin-right: -8px; }
-
-.modal__visible {
-  visibility: visible; }
-
-.modal__close_btn {
-  visibility: hidden; }
-
-.inbalid {
-  color: tomato; }
-
-input.inbalid {
-  border-bottom: 1px solid tomato; }
 
 .footer {
   background: url("../img/footer-bg.jpg") no-repeat center/cover; }

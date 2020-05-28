@@ -131,7 +131,8 @@ $(".modal__form").validate({
     userEmail: {
       required: true,
       email: true
-    }
+    },
+    userPolicy: "required"
   },
   messages: {
     userName: {
@@ -139,11 +140,12 @@ $(".modal__form").validate({
       minlength: "Имя должно быть не менее 2 букв",
       maxlength: "Имя должно быть не больше 15 букв"
     },
-    userPhone: "Пожалуйста, укажите (номер) вашего телефона",
+    userPhone: "Пожалуйста, укажите номер телефона",
     userEmail: {
       required: "Обязательно введите вашу почту",
-      email: "Ваш адрес электронной почты должен быть в формате name@domain.com"
-    }
+      email: "Электронна почта должна быть в формате name@domain.com"
+    },
+    userPolicy: "Обезательно!"
   }
 });
 
@@ -159,6 +161,7 @@ $(".footer__form").validate({
     },
     userQuestion: "required",
     userPhone: "required",
+    userPolicy: "required"
   },
   messages: {
     userName: {
@@ -166,8 +169,9 @@ $(".footer__form").validate({
       minlength: "Имя должно быть не менее 2 букв",
       maxlength: "Имя должно быть не больше 15 букв"
     },
-    userPhone: "Пожалуйста, укажите (номер) вашего телефона",
-    userQuestion: "Напишите свой вопрос"
+    userPhone: "Пожалуйста, укажите номер телефона",
+    userQuestion: "Напишите свой вопрос",
+    userPolicy: "Обезательно!"
   }
 });
 
@@ -181,6 +185,7 @@ $(".control__form").validate({
       maxlength: 15,
     },
     userPhone: "required",
+    userPolicy: "required"
   },
   messages: {
     userName: {
@@ -188,7 +193,8 @@ $(".control__form").validate({
       minlength: "Имя должно быть не менее 2 букв",
       maxlength: "Имя должно быть не больше 15 букв"
     },
-    userPhone: "Пожалуйста, укажите (номер) вашего телефона",
+    userPhone: "Пожалуйста, укажите номер телефона",
+    userPolicy: "Обезательно!"
   }
 });
 
