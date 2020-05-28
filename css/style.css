@@ -1420,14 +1420,24 @@ input.inbalid {
     order: 5;
     margin-bottom: 0;
     margin-top: 21px;
-    margin-bottom: -70px; } }
+    margin-bottom: -70px; }
+  .footer-wrap {
+    padding: 35px 0px;
+    background-color: #131313; }
+  .footer__form {
+    max-width: 100%; } }
 
 @media screen and (max-width: 460px) {
   .footer__button {
     width: 100%; }
   .footer-wrap {
     background-color: #131313; }
-  .footer__section_title_block {
-    display: inline-block; }
   .footer__section_title__heading {
+    margin: 0 auto;
     max-width: 340px; } }
+
+@media screen and (max-width: 399px) {
+  .footer__title_down {
+    display: block; }
+  .footer__title_up {
+    display: block; } }
