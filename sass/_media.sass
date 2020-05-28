@@ -322,9 +322,44 @@
     margin-top: -60px
     margin-bottom: 67px
 
+
+@media screen and ( max-width: 620px )
+  .footer
+    background: none
+    background-color: $dark
+  .footer__menu
+    visibility: hidden
+    display: hidden
+
+  .footer-wrap
+    margin-bottom: -212px
+
+  .footer__wrap_map
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+  .footer__map
+    order: 1
+    // min-width: 340px !important
+    width: 100% !important
+    min-height: 255px
+    margin-bottom: 0
+
+  .footer__map_heading
+    order: 5
+    margin-bottom: 0
+    margin-top: 21px
+    margin-bottom: -70px
+
 @media screen and ( max-width: 460px )
   .footer__button
     width: 100%
 
   .footer-wrap
     background-color: $dark
+  .footer__section_title_block
+    display: inline-block
+
+  .footer__section_title__heading
+    max-width: 340px

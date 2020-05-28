@@ -1016,14 +1016,17 @@ input.inbalid {
 .footer {
   background: url("../img/footer-bg.jpg") no-repeat center/cover; }
 
+.footer__container {
+  position: relative; }
+
 .footer-wrap {
   position: relative;
   background-color: #181818;
   max-width: 883px;
   margin: 0 auto;
-  top: -250px;
+  top: -225px;
   padding: 35px 35px;
-  margin-bottom: 52px; }
+  margin-bottom: -240px; }
 
 .footer__title {
   margin-top: 0;
@@ -1077,6 +1080,36 @@ input.inbalid {
   background-color: #181818;
   padding-top: 48px;
   padding-bottom: 48px; }
+
+.footer__map_heading {
+  margin-top: 64px;
+  text-align: center;
+  margin-bottom: 40px; }
+
+.footer__section_title__heading {
+  text-align: center;
+  text-transform: uppercase;
+  color: #E3B873;
+  font-size: 1.250rem;
+  line-height: 28px;
+  font-family: "Yeseva One", cursive;
+  font-style: normal;
+  font-weight: normal; }
+
+.footer__section_title_block {
+  display: block; }
+
+.footer__icon {
+  margin-right: 15px; }
+
+.footer__map {
+  margin: 0 auto;
+  max-width: 925px;
+  min-height: 465px;
+  margin-bottom: 65px; }
+
+.footer__icon img {
+  width: 40px; }
 
 @media screen and (max-width: 1200px) {
   html {
@@ -1361,8 +1394,36 @@ input.inbalid {
     margin-top: -60px;
     margin-bottom: 67px; } }
 
+@media screen and (max-width: 620px) {
+  .footer {
+    background: none;
+    background-color: #131313; }
+  .footer__menu {
+    visibility: hidden;
+    display: hidden; }
+  .footer-wrap {
+    margin-bottom: -212px; }
+  .footer__wrap_map {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .footer__map {
+    order: 1;
+    width: 100% !important;
+    min-height: 255px;
+    margin-bottom: 0; }
+  .footer__map_heading {
+    order: 5;
+    margin-bottom: 0;
+    margin-top: 21px;
+    margin-bottom: -70px; } }
+
 @media screen and (max-width: 460px) {
   .footer__button {
     width: 100%; }
   .footer-wrap {
-    background-color: #131313; } }
+    background-color: #131313; }
+  .footer__section_title_block {
+    display: inline-block; }
+  .footer__section_title__heading {
+    max-width: 340px; } }

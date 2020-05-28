@@ -196,3 +196,42 @@ $(".control__form").validate({
 // mask for phone
 $('input[type="tel"]').mask("+1 (000) 000-0000", {placeholder: "+1 (___) ___-____"});
 
+// creating yandex map
+
+ymaps.ready(function () {
+  var myMap = new ymaps.Map('map', {
+          center: [55.751574, 37.573856],
+          zoom: 9
+      }, {
+          searchControlProvider: 'yandex#search'
+      }),
+
+      // Creating a content layout.
+      MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+          '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+      ),
+
+      myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+          hintContent: 'Нас офис',
+          balloonContent: 'На 3 этаже'
+      }, {
+          /**
+           * Options.
+           * You must specify this type of layout.
+           */
+          iconLayout: 'default#image',
+          // Custom image for the placemark icon.
+          iconImageHref: '../img/location.png',
+          // The size of the placemark.
+          iconImageSize: [32, 32],
+          /**
+           * The offset of the upper left corner of the icon relative
+           * to its "tail" (the anchor point).
+           */
+          iconImageOffset: [-5, -38]
+      })
+
+  myMap.geoObjects
+      .add(myPlacemark)
+});
+
