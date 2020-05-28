@@ -35,7 +35,7 @@ try {
     His-Her User-Email: ${userEmail}";
 
     $mail->send();
-    echo 'Message has been sent';
+    header("Location: thanks.html");
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
