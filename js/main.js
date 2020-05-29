@@ -120,7 +120,7 @@ $(document).ready(function () {
 
 $(".modal__form").validate({
   errorElement: "div", 
-  errorClass: "inbalid",
+  errorClass: "invalid",
   rules: {
     userName: {
       required: true,
@@ -168,7 +168,7 @@ $(".modal__form").validate({
 
 $(".footer__form").validate({
   errorElement: "div", 
-  errorClass: "inbalid",
+  errorClass: "invalid",
   rules: {
     userName: {
       required: true,
@@ -203,11 +203,13 @@ $(".footer__form").validate({
       error: function (response) {
         alert("Ошыбка сестемы сайта <br> Форма не была отправлена <br> Позвоните на номер: <br> +7 (999) 768-32-99")
       }
+    });
+  }
 });
 
 $(".control__form").validate({
   errorElement: "div", 
-  errorClass: "inbalid",
+  errorClass: "invalid",
   rules: {
     userName: {
       required: true,
@@ -240,6 +242,8 @@ $(".control__form").validate({
       error: function (response) {
         alert("Ошыбка сестемы сайта <br> Форма не была отправлена <br> Позвоните на номер: <br> +7 (999) 768-32-99")
       }
+    });
+  }
 });
 
 
