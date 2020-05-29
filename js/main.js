@@ -145,7 +145,23 @@ $(".modal__form").validate({
       required: "Обязательно введите вашу почту",
       email: "Электронна почта должна быть в формате name@domain.com"
     },
-    userPolicy: "Обезательно!"
+    userPolicy: "Обезательно!",
+  },
+  submitHandler: function(form) {
+    $.ajax({
+      type: "POST",
+      url: "../send.php",
+      data: $(form).serialize(),
+      success: function (response) {
+        console.log("Ajaxis working ", + response);
+        $(form)[0].reset();
+        alert("Заявка отправлена!");
+        // closeBtn.addClass(".modal__close");
+      },
+      error: function (response) {
+        alert("Ошыбка сестемы сайта <br> Форма не была отправлена <br> Позвоните на номер: <br> +7 (999) 768-32-99")
+      }
+    });
   }
 });
 

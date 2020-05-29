@@ -18,11 +18,11 @@ try {
     $mail->SMTPDebug = 0;                      // Enable verbose debug output
     $mail->isSMTP();                                            // Send using SMTP
     $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
-    $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
+    $mail->SMTPAuth   = true;                                  // Enable SMTP authentication
     $mail->Username   = 'serhiifiolow12345@gmail.com';                     // SMTP username
     $mail->Password   = 'Google12345';                               // SMTP password
-    $mail->SMTPSecure = "ssl";         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
-    $mail->Port       = 465;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
+    $mail->SMTPSecure = "ssl"; //ssl        // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
+    $mail->Port       = 465; //465                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
     //Recipients
     $mail->setFrom('serhiifiolow12345@gmail.com', 'Repair-Design');
@@ -36,8 +36,12 @@ try {
     His-Her User-Email: ${userEmail} <br> 
     User-question: ${userQuestion} <br> ";
 
-    $mail->send();
-    header("Location: thanks.html");
+    if ($mail->send()) {
+      echo "ok";
+    } else {
+      echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    }
+    
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
