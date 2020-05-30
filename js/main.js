@@ -1,8 +1,7 @@
 
 $(document).ready(function () {
 
-  const gulp = require('gulp');
-  const autoprefixer = require('gulp-autoprefixer');
+  // const gulp = require('gulp');
 
   var modal = $(".modal"),
     modalBtn = $('[data-toggle="modal"]'),

@@ -1,8 +1,10 @@
 const {src, dest, watch} = require('gulp');
 const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass');
+const cleanCSS = require('gulp-clean-css');
+// const gulp = require('gulp');
 const autoprefixer = require('gulp-autoprefixer');
-
+var minifyjs = require('gulp-js-minify');
 
 // Static server
 function bs() {
@@ -34,8 +36,23 @@ function serveSass() {
 };
 // Compile sass into css (end)
 
-exports.serve = bs;
+function buildCSS(done) {
+  src("css/style.css")
+    .pipe()(cleanCSS({compatibility: 'ie8'}))
+    .pipe(dest("dist/css/"));
+  done();
+}
 
+function buildJS(done) {
+  src(["js/**.js", "!js/**.min.js"])
+  .pipe(minifyjs())
+  .pipe(dest("dist/js/"));
+  done();
+}
+
+// exports.serve = bs;
+exports.serve = buildCSS;
+exports.serve = buildJS;
 
 // Minify css file into minimize(save merrory)
 // let gulp = require('gulp');
