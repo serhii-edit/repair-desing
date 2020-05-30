@@ -1,10 +1,27 @@
 @font-face {
   font-family: 'Futura Book';
-  src: url('../fonts/futura/FuturaBookC-Italic.woff2') format('woff2');
+  src: url('../fonts/futura/FuturaBookC.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: wrap;
-  }
+}
+
+@font-face {
+  font-family: 'Futura Book';
+  src: url('../fonts/futura/FuturaBookC.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: wrap;
+}
+
+@font-face {
+  font-family: 'Futura Demi';
+  src: url('../fonts/futura/FuturaDemi.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: wrap;
+}
+
 
 @font-face {
   font-family: 'Futura Demi';
@@ -14,21 +31,8 @@
   font-display: wrap;
   }
 
-@font-face {
-  font-family: 'Futura Book';
-  src: url('../fonts/futura/FuturaBookC.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: wrap;
-}
-
-@font-face {
-  font-family: 'Futura Demi';
-  src: url('../fonts/futura/FuturaLightC-Italic.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: wrap;
-}
-
 // html 
+
+// button 
+
   
