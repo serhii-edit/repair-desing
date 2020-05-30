@@ -26,6 +26,10 @@
   font-style: normal;
   font-display: swap; }
 
+html {
+  font-family: "Futura Book", cursive;
+  font-display: swap; }
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -478,9 +482,19 @@ html {
   background-color: #131313;
   color: #FFFFFF; }
 
-@media screen and (max-width: 921px) {
-  html.touch *:hover {
-    all: unset !important; } }
+@media screen and (max-width: 922px) {
+  button:hover {
+    all: none !important; }
+  a:hover {
+    all: none !important; }
+  .button:hover {
+    all: none !important; }
+  *:hover {
+    all: none !important; }
+  * {
+    -webkit-animation: none !important;
+    animation: none !important;
+    transition: none !important; } }
 
 .modal {
   visibility: hidden;
@@ -1296,7 +1310,8 @@ input.invalid {
     font-size: 15px; } }
 
 @media screen and (max-width: 924px) {
-  bottom: 0; }
+  .card__pricetag_desing {
+    bottom: 0; } }
 
 @media screen and (max-width: 924px) {
   .desing {
