@@ -13,27 +13,27 @@
 </head>
 <body>
   <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(64466113, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/64466113" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
-
+  <span id="logo__back"></span>
   <header class="header">
     <div class="container">
       <div class="menu">
-        <a href="#main-id" class="logo menu__logo animate__animated animate__bounceInLeft">REPAIR DESIGN PROJECT</a>
+        <a href="#logo__back" class="logo menu__logo animate__animated animate__bounceInLeft">REPAIR DESIGN PROJECT</a>
         <!-- /.logo -->
 
         <nav class="nav menu__nav">
-          <a href="#" class="nav__item">Главная</a>
-          <a href="#" class="nav__item">Проекты</a>
-          <a href="#" class="nav__item">Замер</a>
-          <a href="#" class="nav__item">Команда</a>
-          <a href="#" class="nav__item">Отзывы</a>
-          <a href="#" class="nav__item">Контакты</a>
+          <a href="#logo__back" class="nav__item">Главная</a>
+          <a href="#scroll-to-down-p" class="nav__item">Проекты</a>
+          <a href="#x" class="nav__item">Замер</a>
+          <a href="#x" class="nav__item">Команда</a>
+          <a href="#x" class="nav__item">Отзывы</a>
+          <a href="#scroll-to-contact" class="nav__item">Контакты</a>
         </nav>
         <!-- /.nav -->
 
         <div class="contacts menu__contacts">
           <a href="tel:+79997683299" class="phone contacts__phone">
             +7 (999) 768-32-99</a>
-            <button class="button contacts__button" data-toggle="modal" id="modalBtn">
+            <button onclick="ym('64466113', 'reachGoal', 'button'); return true;"" class="button contacts__button" data-toggle="modal" id="modalBtn">
               Заказать звонок
             </button>
         </div>
@@ -72,8 +72,8 @@
       </div>
       <!-- /.hero__content -->
     </div>
-
-      <a href="#" class="hero__scroll-down wow animate__animated animate__tada" data-wow-delay="5s" data-wow-duration="1s" data-wow-iteration="4">ЛИСТАЙТЕ ВНИЗ</a>
+    <span id="scroll-to-down-p"></span>
+      <a href="#scroll-to-down-p" class="hero__scroll-down wow animate__animated animate__tada" data-wow-delay="5s" data-wow-duration="1s" data-wow-iteration="4">ЛИСТАЙТЕ ВНИЗ</a>
      </section>
 
      <section class="section section__dark projects">
@@ -264,7 +264,7 @@
                   </div>
 
                   <div class="swiper-slide swiper-slider__img">
-                    <img class="img-projects" src="img/projects2.jpg" alt="">
+                    <img class="img-projects" src="img/projects.jpg" alt="">
                   </div>
 
                   <div class="swiper-slide swiper-slider__img">
@@ -301,8 +301,11 @@
          <!-- /.section_title -->
 
          <div class="control__video video wow animate__animated 
-         animate__fadeInUp" data-wow-delay="0.5s">
+              animate__fadeInUp" data-wow-delay="0.5s" id="player">
+            <script src="https://www.youtube.com/iframe_api">
+            </script>
            <img src="img/video-play.svg" alt="Push to play - icon" class="video__play">
+
          </div>
          <!-- /.control__video video -->
 
@@ -313,24 +316,24 @@
          <form action="send.php" method="POST" class="form control__form">
            
           <div class="control__input-group">
-            <label for="user-name" class="label form__lable control__lable">
+            <label for="user-name1" class="label form__lable control__lable">
               Имя
             </label>
-            <input type="text" name="userName" class="input form__input control__input control__input_border" id="user-name" placeholder="Как вас зовут:">
+            <input type="text" name="userName" class="input form__input control__input control__input_border" id="user-name1" placeholder="Как вас зовут:">
           </div>
     
           <div class="control__input-group">
-            <label for="user-phone" class="label form__lable control__lable">
+            <label for="user-phone1" class="label form__lable control__lable">
               Телефон
             </label>
-            <input type="tel" name="userPhone" class="input form__input control__input control__input_border" id="user-phone" placeholder="Ваш номер телефона:">
+            <input type="tel" name="userPhone" class="input form__input control__input control__input_border" id="user-phone1" placeholder="Ваш номер телефона:">
           </div>
           
           <button class="button button_primary control__button">
             Отправить
           </button>
           <div class="policy control__policy">
-            <input type="checkbox" name="userPolicy" class="policy__checkbox" id="policy_checkboxb">
+            <input type="checkbox" checked name="userPolicy" class="policy__checkbox" id="policy_checkboxb">
             <label for="policy_checkboxb" class="policy__label">
               Я соглашаюсь с обработкой данных
             </label>
@@ -549,38 +552,38 @@
         <form action="send.php" method="POST" class="form footer__form">
 
           <div class="footer__input_group">
-            <label for="user-name" class="label form__lable label_light footer__form__lable">
+            <label for="user-name3" class="label form__lable label_light footer__form__lable">
               Имя
             </label>
-            <input type="text" name="userName" class="input form__input footer__input input_light" id="user-name" placeholder="Как вас зовут:">
+            <input type="text" name="userName" class="input form__input footer__input input_light" id="user-name3" placeholder="Как вас зовут:">
           </div>
           <!-- <<><>> -->
           <div class="footer__input_group">
-            <label for="user-phone" class="label form__lable label_light footer__form__lable">
+            <label for="user-phone3" class="label form__lable label_light footer__form__lable">
               Телефон
             </label>
-            <input type="tel" name="userPhone" class="input form__input footer__input input_light" id="user-phone" placeholder="Ваш номер телефона:">
+            <input type="tel" name="userPhone" class="input form__input footer__input input_light" id="user-phone3" placeholder="Ваш номер телефона:">
           </div>
           <!-- /.footer__input_group -->
           <!-- <<><>> -->
           <div class="footer__input_group footer__input_group_full_width">  
-          <label for="user-question" class="label form__lable label_light footer__form__lable">
+          <label for="user-question3" class="label form__lable label_light footer__form__lable">
               Вопрос
           </label>
-          <input type="text" name="userQuestion" class="input form__input footer__input input_light" id="user-question" placeholder="Я хочу спросить">
+          <input type="text" name="userQuestion" class="input form__input footer__input input_light" id="user-question3" placeholder="Я хочу спросить">
           </div>
           <!-- /.footer__input_group -->
           <!-- <<><>> -->
 
           <div class="policy footer__policy">
-            <input type="checkbox" name="userPolicy" class="policy__checkbox" id="policy_checkboxa">
+            <input type="checkbox" checked name="userPolicy" class="policy__checkbox" id="policy_checkboxa">
             <label for="policy_checkboxa" class="policy__label" class="policy__label footer__policy__center">
               Я соглашаюсь с обработкой данных
             </label>
           </div>
           <!-- /.policy -->
           <!-- <<><>> -->
-          <button class="button button_primary footer__button">
+          <button class="button button_primary footer__button" id="scroll-to-contact">
             Отправить
           </button>
         </form>
@@ -589,12 +592,15 @@
       <!-- /.footer-wrap -->
       <div class="footer__wrap_map">
       <div class="footer__map_heading">
-        <h3 class="footer__section_title__heading">
+        <h3 class="footer__section_title__heading" >
           <span class="footer__title_up">
             Ростов на дону, Торговый
           </span> 
           центр Plaza
-          Прямой телефон <span class="footer__title_down">+7 (999) 768 32 99</span>
+          Прямой телефон 
+          <span class="footer__title_down">
+            <a href="tel:+79997683299" title="Чтобы позвонить кликайте по номеру">+7 (999) 768 32 99</a>
+          </span>
           
         </h3>
         <div class="footer__section__title_icons">
@@ -613,17 +619,18 @@
     <div class="footer__menu">
       <div class="container">
         <div class="menu">
-          <a href="#main-id" class="logo menu__logo animate__animated animate__bounceInLeft">REPAIR DESIGN PROJECT</a>
-          <!-- /.logo -->
-            <nav class="nav menu__nav">
-              <a href="#" class="nav__item">Главная</a>
-              <a href="#" class="nav__item">Проекты</a>
-              <a href="#" class="nav__item">Замер</a>
-              <a href="#" class="nav__item">Команда</a>
-              <a href="#" class="nav__item">Отзывы</a>
-              <a href="#" class="nav__item">Контакты</a>
-            </nav>
-          <!-- /.nav -->
+          <a href="#logo__back" class="logo menu__logo animate__animated animate__bounceInLeft">REPAIR DESIGN PROJECT</a>
+        <!-- /.logo -->
+
+        <nav class="nav menu__nav">
+          <a href="#logo__back" class="nav__item">Главная</a>
+          <a href="#scroll-to-down-p" class="nav__item">Проекты</a>
+          <a href="#x" class="nav__item">Замер</a>
+          <a href="#x" class="nav__item">Команда</a>
+          <a href="#x" class="nav__item">Отзывы</a>
+          <a href="#scroll-to-contact" class="nav__item">Контакты</a>
+        </nav>
+        <!-- /.nav -->
           <div class="contacts menu__contacts">
             <a href="tel:+79997683299" class="phone contacts__phone">
               +7 (999) 768-32-99</a>
@@ -649,27 +656,27 @@
       <form action="send.php" method="POST" class="form modal__form">
 
         <div class="modal__input_group">
-          <label for="user-name" class="label form__lable label_light">
+          <label for="user-name2" class="label form__lable label_light">
             Имя
           </label>
-          <input type="text" name="userName" class="input form__input modal__input input_light" id="user-name" placeholder="Как вас зовут:">
+          <input type="text" name="userName" class="input form__input modal__input input_light" id="user-name2" placeholder="Как вас зовут:">
         </div>
         <div class="modal__input_group">
-          <label for="user-phone" class="label form__lable label_light">
+          <label for="user-phone2" class="label form__lable label_light">
             Телефон
           </label>
-          <input type="tel" name="userPhone" class="input form__input modal__input input_light" id="user-phone" placeholder="Ваш номер телефона:">
+          <input type="tel" name="userPhone" class="input form__input modal__input input_light" id="user-phone2" placeholder="Ваш номер телефона:">
         </div>
         <div class="modal__input_group">
-          <label for="user-email" class="label form__lable label_light">
+          <label for="user-email2" class="label form__lable label_light">
             Email
           </label>
-          <input type="email" name="userEmail" class="input form__input modal__input input_light" id="user-email" placeholder="Ваш email">
+          <input type="email" name="userEmail" class="input form__input modal__input input_light" id="user-email2" placeholder="Ваш email">
         </div>
 
         
         <div class="policy modal__policy">
-          <input type="checkbox" name="userPolicy" class="policy__checkbox" id="policy_checkboxc">
+          <input type="checkbox" checked name="userPolicy" class="policy__checkbox" id="policy_checkboxc">
           <label for="policy_checkboxc" class="policy__label">
             Я соглашаюсь с обработкой данных
           </label>

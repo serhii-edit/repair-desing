@@ -264,10 +264,10 @@
     flex-direction: column
   .control__input-group
     width: 100%
-    border-bottom: 1px solid #fff
     margin-bottom: 63px
   .control__input
     color: #fff
+    border-bottom: 1px solid #fff
   .control__policy
     margin-top: -22px
     justify-content: flex-start
@@ -357,9 +357,26 @@
     background-color: $dark
   .footer__form
     max-width: 100%
+
+  .footer__icon img
+    width: 40px
+
+  .video__play
+    max-width: 95px
+  
+  .desing
+    padding-bottom: 300px
+    // padding-bottom: 230px
+
+  .policy__label
+    justify-content: left
+
 @media screen and ( max-width: 460px )
   .footer__button
     width: 100%
+  .desing
+    // padding-bottom: 300px
+    padding-bottom: 230px
 
   .footer-wrap
     background-color: $dark
@@ -370,6 +387,10 @@
     margin: 0 auto
     max-width: 340px
     // font-size: 15px
+    margin-bottom: 15px
+
+  .video__play
+    max-width: 65px
 
 @media screen and ( max-width: 399px )
   .footer__section_title__heading
@@ -378,3 +399,19 @@
     display: block
   .footer__title_up
     display: block
+
+@media screen and ( max-width: 376px )
+  .hero__container
+    width: 90%
+
+@media screen and ( max-width: 375px )
+  .hero__text
+    width: auto
+
+@media screen and ( max-width: 805px )
+  .footer__title_down a 
+    display: block
+
+@media screen and ( max-height: 570px )
+  .modal__input_group 
+    height: 60px

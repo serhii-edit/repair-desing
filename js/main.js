@@ -115,7 +115,24 @@ $(document).ready(function () {
 
   next.css("left", prev.width() + 50 + bullets.width() + 30)
   bullets.css("left", prev.width() + 30)
-    
+
+  var player;
+  $(".video__play").on("click", function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+      height: '434',
+      width: '100%',
+      videoId: 'RHzzLqJWqHs',
+      events: {
+        'onReady': videoPlay,
+        // 'onStateChange': onPlayerStateChange
+      }
+    });
+  })
+  
+  function videoPlay(event) {
+    event.target.playVideo();
+  }
+
 });
 
 $(".modal__form").validate({
@@ -127,7 +144,10 @@ $(".modal__form").validate({
       minlength: 2,
       maxlength: 15
     },
-    userPhone: "required",
+    userPhone: {
+      required: true,
+      minlength: 17,
+    },
     userEmail: {
       required: true,
       email: true
@@ -176,7 +196,10 @@ $(".footer__form").validate({
       maxlength: 15
     },
     userQuestion: "required",
-    userPhone: "required",
+    userPhone: {
+      required: true,
+      minlength: 17,
+    },
     userPolicy: "required"
   },
   messages: {
@@ -216,8 +239,11 @@ $(".control__form").validate({
       minlength: 2,
       maxlength: 15,
     },
-    userPhone: "required",
-    userPolicy: "required"
+    userPhone: {
+      required: true,
+      minlength: 17,
+    },
+    userPolicy: "required",
   },
   messages: {
     userName: {
@@ -248,10 +274,17 @@ $(".control__form").validate({
 
 
 // mask for phone
-$('input[type="tel"]').mask("+1 (000) 000-0000", {placeholder: "+1 (___) ___-____"});
+var inputTels = $("input[type='tel']");
+
+// var inputTel = $("input[type='tel']").mask("+1 (000) 000-0000", {placeholder: "+1 (___) ___-____"});
+
+inputTels.on("focus", function() {
+  $("input[type='tel']").mask("+1 (000) 000-0000", {placeholder: "+1 (___) ___-____"});
+});
+
+// $('input[type="tel"]').mask("+1 (000) 000-0000", {placeholder: "+1 (___) ___-____"});
 
 // creating yandex map
-
 ymaps.ready(function () {
   var myMap = new ymaps.Map('map', {
           center: [55.751574, 37.573856],
