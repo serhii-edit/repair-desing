@@ -77,12 +77,14 @@ function buildFONTS(done) {
 };
 
 function imageMIN(done) {
-  src("img/**/**")
+  src("img/**/**/**")
   .pipe(tinypng({
     key: '7fp3ZGtHDZ7N3yb0hj2tXlyThL4N69WZ',}))
     .pipe(dest("dist/img/"))
     src("img/**/*.svg")
     .pipe(dest("dist/img/"))
+    src("img/**/**/**")
+    .pipe(dest("dist/img/types/"))
   done();
 }
 
